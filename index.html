@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container" class="container ">
+        <h1>Quiz coding start</h1>
+        <button id="start" class=" bg-danger ">Start Quiz</button>
+        <div id="quiz" style="display: none">
+
+            <div id="question" class="text-danger"></div>
+            <div id="choices" >
+                <ol class="text-danger">
+                    <li><button class="choices bg-danger " id="A" onclick="checkAnswer('alerts')"></button></li>
+                    <li><button class="choices bg-danger" id="B" onclick="checkAnswer('parentheses')"></button></li>
+                    <li><button class="choices bg-danger" id="C" onclick="checkAnswer('all of them')"></button></li>
+                    <li><button class="choices bg-danger" id="D" onclick="checkAnswer('curly brackets')"></button></li>
+                </ol>
+            </div>
+
+
+        </div>
+        <div id="progress" style="display: none">
+            <p id="addscore"></p>
+            <button id="startagain" class=" bg-danger ">go back</button>
+            <input id="mainscore" value="" type="number"> <button class=" bg-danger " id="save" onclick="myFunction()">save score</button>
+        </div>
+        <div id="timer" class="timecss"> </div>
+        <hr>
+        <div id="check"></div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
